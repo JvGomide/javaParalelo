@@ -42,13 +42,13 @@ public class Main {
     }
 
     // Método para buscar o valor no array
-    private static Integer procurarValor(int valorProcurado, int[] valores) {
+    private static int procurarValor(int valorProcurado, int[] valores) {
         for (int i = 0; i < valores.length; i++) {
             if (valores[i] == valorProcurado) {
-                return i; // Valor encontrado na posição i
+                return i; // Retorna a posição se encontrar o valor
             }
         }
-        return null; // Valor não encontrado
+        return -1; // Retorna -1 se o valor não for encontrado
     }
 
 
